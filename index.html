@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Job Application Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <h2 class="title">Job Application Tracker</h2>
+
+    <!-- Dashboard -->
+    <div class="dashboard">
+
+        <div class="dash-box">
+            <span>Total</span>
+            <h3 id="totalCount">8</h3>
+        </div>
+
+        <div class="dash-box">
+            <span>Interview</span>
+            <h3 id="interviewCount" class="green">0</h3>
+        </div>
+
+        <div class="dash-box">
+            <span>Rejected</span>
+            <h3 id="rejectedCount" class="red">0</h3>
+        </div>
+
+    </div>
+    <div class="divider"></div>
+
+
+    <!-- Available Jobs Section -->
+    <div class="section-header">
+
+        <h3>Available Jobs</h3>
+        <span id="jobCount">8 jobs</span>
+
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs">
+
+        <button class="tab active" data-tab="all">All</button>
+        <button class="tab" data-tab="interview">Interview</button>
+        <button class="tab" data-tab="rejected">Rejected</button>
+
+    </div>
+
+
+    <!-- Jobs list -->
+    <div id="jobList"></div>
+
+
+    <!-- Empty state -->
+    <div id="emptyState" class="empty hidden">
+
+    <img src="icons/jobs.png" alt="" class="empty-icon">
+
+    <p>No jobs available</p>
+    <small>Check back soon for new opportunities</small>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
