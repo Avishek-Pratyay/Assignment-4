@@ -276,3 +276,4 @@ renderJobs();
 
 // ===== INITIAL LOAD =====
 
+renderJobs();
